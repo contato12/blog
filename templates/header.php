@@ -1,7 +1,11 @@
-<?php include_once('helpers/url.php'); ?>
+<?php 
+    include_once('helpers/url.php');
+    include_once('data/posts.php'); 
+    include_once('data/categories.php');
+?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
