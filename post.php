@@ -13,7 +13,7 @@
 
     <main id="post-container">
         <div class="content-container">
-            <h1 id="main-tatle"><?= $currentPost['title'] ?></h1>
+            <h1 id="main-title"><?= $currentPost['title'] ?></h1>
             <p id="post-description"><?= $currentPost['description'] ?></p>
             <div class="img-container">
                 <img src="<?= $BASE_URL ?>img/<?= $currentPost['img'] ?>" alt="<?= $currentPost['title'] ?>">
@@ -30,21 +30,21 @@
             Blanditiis suscipit iure eligendi reprehenderit sed consequuntur magnam, quae incidunt aspernatur modi dolor voluptates nesciunt odit! Autem accusamus officia aliquid in! Repudiandae, debitis repellat itaque optio dolorum amet nemo veritatis!
             Dicta molestias fugiat suscipit, excepturi aspernatur neque velit placeat veritatis nihil voluptas dolores perspiciatis tenetur. Maxime ducimus alias ullam voluptatem hic nam labore velit deleniti laborum totam. Distinctio, fugit enim?</p>
         </div>
-    </main>
 
-    <aside id="nav-container">
-        <h3 id="tags-title">Tags</h3>
-        <ul class="tag-list">
-            <?php foreach($currentPost['tags'] as $tag): ?>
-                <li><a href="#"><?= $tag ?></a></li>    
-            <?php endforeach; ?> 
-            <h3 id="categories-title">Categorias</h3>
-            <ul id="categories-list">
-            <?php foreach($categories as $category): ?>
-                <li><a href="#"><?= $category ?></a></li>    
-            <?php endforeach; ?>
+        <aside id="nav-container">
+            <h3 id="tags-title">Tags</h3>
+            <ul id="tag-list">
+                <?php foreach($currentPost['tags'] as $tag): ?>
+                    <li><a href="#"><?= $tag ?></a></li>    
+                <?php endforeach; ?> 
+                <h3 id="categories-title">Categorias</h3>
+                <ul id="categories-list">
+                    <?php foreach($categories as $category): ?>
+                        <li><a href="#"><?= $category ?></a></li>    
+                    <?php endforeach; ?>
+                </ul>
             </ul>
-        </ul>
-    </aside>
+        </aside>
+    </main>
 
 <?php include_once('templates/footer.php'); ?>
